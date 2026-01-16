@@ -51,10 +51,11 @@ if ($err) {
     echo "Erreur technique (cURL) : " . $err;
 } elseif ($httpCode >= 200 && $httpCode < 300) {
     // Redirection vers ton index avec un paramètre de succès
-    header('Location: Untitled-1.html?sent=success#contact');
+    header('Location: index.html?sent=success#contact');
     exit();
 } else {
     // Affiche l'erreur de Resend pour comprendre ce qui bloque
     echo "Erreur Resend (Code $httpCode) : " . $response;
 }
+
 ?>
