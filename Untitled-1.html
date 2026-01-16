@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Nathan Romero | Développeur Fullstack </title>
+    <meta name="description" content="Portfolio de Nathan Romero, étudiant en BUT MMI à Tarbes.">
+    <meta name="keywords" content="Nathan Romero, Développeur Fullstack, Design Graphique, Portfolio, BUT MMI, Tarbes, Web Design, Illustrator, JavaScript">
+    <meta name="author" content="Nathan Romero">
+
+    <meta property="og:title" content="Nathan Romero | Portfolio">
+    <meta property="og:description" content="Découvrez mes projets web et graphiques. Étudiant passionné par le code et le design.">
+    <meta property="og:image" content="image/logo.webp">
+    <meta property="og:type" content="website">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <div class="grain-overlay"></div>
+
+    <button id="theme-toggle" aria-label="Changer de thème">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <aside class="sidebar">
+        <div class="sidebar-line"></div>
+        <div class="sidebar-socials">
+            <a href="https://www.linkedin.com/in/nathan-romero-a16a33355/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/nathan_rmr_/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/Racaillou" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="sidebar-line"></div>
+    </aside>
+
+    <header class="header">
+        <nav class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="#projets" class="nav-btn">Projets</a></li>
+                <a href="#">
+                    <img src="image/logo.webp" alt="Logo Nathan Romero" class="nav-logo">
+                    <img src="image/logo2.webp" alt="Logo Nathan Romero" class="nav-logo2">
+                </a>
+                <li><a href="#contact" class="nav-btn">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Nathan Romero.<br><span class="text-gradient">Développeur Fullstack.</span></h1>
+                <p class="hero-text">Étudiant en 2ème année de <strong>BUT MMI à l'IUT de Tarbes</strong>. Passionné par le développement web et la création graphique, je recherche un stage pour 2026.</p>
+                <div class="hero-btns">
+                    <a href="#projets" class="btn-filled">Projets</a>
+                    <a href="#contact" class="btn-outlined">Contact</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets" class="work-section">
+            <h2 class="section-title">Projets Sélectionnés</h2>
+            <div class="work-grid">
+                <article class="work-card">
+                    <div class="work-img">
+                        <img src="image/champi-1.png" alt="Illustration vectorielle Champignon Mario par Nathan Romero">
+                        <div class="work-overlay"><button class="detail-trigger" data-project="mario">En savoir plus</button></div>
+                    </div>
+                    <div class="work-info">
+                        <h3>Champignon Mario</h3>
+                        <div class="work-techs"><span>Illustrator</span></div>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <div class="work-img">
+                        <img src="image/Parfum.png" alt="Design identité visuelle Parfum Nectar">
+                        <div class="work-overlay"><button class="detail-trigger" data-project="nectar">En savoir plus</button></div>
+                    </div>
+                    <div class="work-info">
+                        <h3>Nectar</h3>
+                        <div class="work-techs"><span>Illustrator</span></div>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <div class="work-img">
+                        <img src="image/Site Web.png" alt="Développement Web Interface ATE Fullstack">
+                        <div class="work-overlay"><button class="detail-trigger" data-project="ate">En savoir plus</button></div>
+                    </div>
+                    <div class="work-info">
+                        <h3>ATE</h3>
+                        <div class="work-techs"><span>HTML</span><span>CSS</span></div>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <div class="work-img">
+                        <img src="image/lighthouse.webp" alt="Affiche interactive développée en JavaScript">
+                        <div class="work-overlay"><button class="detail-trigger" data-project="affiche">En savoir plus</button></div>
+                    </div>
+                    <div class="work-info">
+                        <h3>Affiche Interactive</h3>
+                        <div class="work-techs"><span>JS</span><span>Illustrator</span></div>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <div class="work-img">
+                        <img src="image/Jeu.png" alt="Jeu vidéo Knight Maze ascent créé avec Scratch">
+                        <div class="work-overlay"><button class="detail-trigger" data-project="knight">En savoir plus</button></div>
+                    </div>
+                    <div class="work-info">
+                        <h3>Knight Maze ascent</h3>
+                        <div class="work-techs"><span>Scratch</span><span>Pixel ART</span></div>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <div class="work-img">
+                        <img src="image/GR.png" alt="Graphisme éco-responsable Nathan Romero">
+                        <div class="work-overlay"><button class="detail-trigger" data-project="gr">En savoir plus</button></div>
+                    </div>
+                    <div class="work-info">
+                        <h3>Generation Responsable</h3>
+                        <div class="work-techs"><span>Illustrator</span></div>
+                    </div>
+                </article>
+            </div>
+
+            <div id="project-details-area" class="project-details-content" style="display:none;">
+                <div class="details-wrapper">
+                    <button class="close-details" aria-label="Fermer">✕</button>
+                    <div id="details-text-content"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="parcours" class="work-section">
+            <h2 class="section-title">Mon Parcours Scolaire</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2026 - Présent</span>
+                        <h3>BUT MMI 2ème année</h3>
+                        <p>IUT de Tarbes — Spécialisation en <strong>développement web</strong> et design interactif.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 - 2025</span>
+                        <h3>BUT MMI 1ère année</h3>
+                        <p>Apprentissage des fondamentaux du numérique, du code et du design graphique.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 - 2024</span>
+                        <h3>Baccalauréat général</h3>
+                        <p>Lycée Théophile Gautier — Spécialités LLCE et NSI (Numérique et Sciences Informatiques).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cv-container">
+                <a href="image/CV.pdf" target="_blank" class="btn-outlined cv-btn">
+                    <i class="fa-solid fa-file-pdf"></i> Télécharger mon CV (PDF)
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="contact-box">
+                <div class="contact-header">
+                    <span class="status-badge">Disponible pour Stage 2026</span>
+                    <h2>On discute ?</h2>
+                    <p>Pour un projet, un stage ou simplement échanger sur le design et le code.</p>
+                </div>
+                <form class="contact-form" action="mail.php" method="POST">
+                    <div class="input-container">
+                        <input type="text" id="name" name="name" placeholder=" " required>
+                        <label for="name">Votre nom</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" id="email" name="email" placeholder=" " required>
+                        <label for="email">Votre email</label>
+                    </div>
+                    <div class="input-container">
+                        <textarea id="message" name="message" placeholder=" " rows="5" required></textarea>
+                        <label for="message">Votre message</label>
+                    </div>
+                    <button type="submit" class="submit-btn"><span>Envoyer le message</span></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-cta">
+                <h3>On construit la suite ?</h3>
+                <a href="#contact" class="footer-mail">06 43 22 31 70</a>
+            </div>
+            <div class="footer-bottom">
+                <p>Nathan Romero &copy; 2026 - Portfolio Développeur</p>
+                <p>Basé à Tarbes, France</p>
+                <div class="footer-links">
+                    <a href="#projets">Projets</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // --- FOND INTERACTIF ---
+        const canvas = document.getElementById('bg-canvas');
+        const ctx = canvas.getContext('2d');
+        let dots = [];
+        const spacing = 40;
+        let mouse = { x: -1000, y: -1000 };
+
+        const initCanvas = () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            dots = [];
+            for (let x = 0; x < canvas.width; x += spacing) {
+                for (let y = 0; y < canvas.height; y += spacing) {
+                    dots.push({ x, y, baseSize: 1 });
+                }
+            }
+        };
+
+        const animateBackground = () => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            dots.forEach(dot => {
+                const dist = Math.hypot(mouse.x - dot.x, mouse.y - dot.y);
+                const maxDist = 150;
+                let size = dot.baseSize;
+                if (dist < maxDist) {
+                    const scale = (1 - dist / maxDist) * 3;
+                    size = dot.baseSize + scale;
+                    ctx.fillStyle = '#FA7921'; 
+                } else {
+                    ctx.fillStyle = 'rgba(156, 163, 175, 0.3)';
+                }
+                ctx.beginPath();
+                ctx.arc(dot.x, dot.y, size, 0, Math.PI * 2);
+                ctx.fill();
+            });
+            requestAnimationFrame(animateBackground);
+        };
+
+        initCanvas(); animateBackground();
+
+        // --- SOURIS & CURSEUR ---
+        const dot = document.querySelector(".cursor-dot");
+        const outline = document.querySelector(".cursor-outline");
+        window.addEventListener("mousemove", (e) => {
+            mouse.x = e.clientX; mouse.y = e.clientY;
+            gsap.to(dot, { x: e.clientX, y: e.clientY, duration: 0 });
+            gsap.to(outline, { x: e.clientX, y: e.clientY, duration: 0.1 });
+        });
+        window.addEventListener('resize', initCanvas);
+        document.querySelectorAll("a, button, .work-card").forEach(el => {
+            el.addEventListener("mouseenter", () => outline.classList.add("active"));
+            el.addEventListener("mouseleave", () => outline.classList.remove("active"));
+        });
+
+        // --- THEME SWITCHER ---
+        const themeToggle = document.getElementById('theme-toggle');
+        const updateTheme = (theme) => {
+            document.body.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+            themeToggle.innerHTML = theme === 'dark' ? '<i class="fa-solid fa-moon"></i>' : '<i class="fa-solid fa-sun"></i>';
+        };
+        themeToggle.addEventListener('click', () => {
+            const newTheme = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            updateTheme(newTheme);
+        });
+        updateTheme(localStorage.getItem('theme') || 'dark');
+
+        // --- GESTION DES DÉTAILS PROJETS (SEO) ---
+        const projectStories = {
+            mario: `<h3>Champignon Mario : L'Art du Tracé Vectoriel</h3> <p>Au-delà d'une simple reproduction, ce projet sur <strong>Adobe Illustrator</strong> m'a permis de travailler la géométrie parfaite. J'ai utilisé des techniques de tracés à la plume et de gestion des calques pour obtenir un rendu <strong>Flat Design</strong> professionnel. L'enjeu était de maîtriser les proportions et l'équilibre visuel, des compétences essentielles pour créer des interfaces web modernes.</p> <a href="image/champi-1.pdf" target="_blank" class="btn-outlined"><i class="fa-solid fa-eye"></i> Voir le design HD</a>`,
+            nectar: `<h3>Nectar : Création d'une Identité Visuelle Premium</h3> <p>Nectar est un exercice complet de <strong>branding</strong>. J'ai conçu le logo et le packaging en m'appuyant sur la psychologie des couleurs pour évoquer le luxe et la pureté. Ce projet démontre ma capacité à créer une charte graphique cohérente, capable de se décliner aussi bien sur des supports physiques que sur des <strong>interfaces web (UI Design)</strong> haute définition.</p> <a href="image/Parfum.png" target="_blank" class="btn-outlined"><i class="fa-solid fa-image"></i> Voir le packaging</a>`,
+            ate: `<h3>ATE : Développement d'une Interface Web Interactive</h3> <p>Ce projet est le cœur de mon expertise en <strong>développement Front-End</strong>. Nous avons conçu une plateforme entièrement <strong>responsive</strong> en utilisant du JavaScript pour garantir des performances optimales. L'accent a été mis sur l'<strong>UX Design</strong> : une navigation fluide et une structure HTML sémantique pour le référencement.</p> <a href="https://ellandeee.github.io/ATE/" target="_blank" class="btn-filled"><i class="fa-solid fa-globe"></i> Visiter le site</a>`,
+            affiche: `<h3>Affiche Interactive : Quand le Code rencontre le Design</h3> <p>Comment rendre un support statique vivant ? En utilisant les API de mouvement en <strong>JavaScript</strong>, nous avons créé une affiche qui réagit aux interactions de l'utilisateur. C'est une exploration du <strong>Creative Coding</strong> où le design vectoriel d'Illustrator s'anime grâce au code, offrant une expérience immersive unique.</p> <a href="https://ellandeee.itch.io/lighthouse-affiche-interactive" target="_blank" class="btn-filled"><i class="fa-solid fa-play"></i> Lancer l'interaction</a>`,
+            knight: `<h3>Knight Maze Ascent : Game Design & Pixel Art</h3> <p>Ce projet de jeu vidéo m'a permis d'aborder la <strong>logique de programmation complexe</strong> (boucles, variables de score, détection de collisions). J'ai également réalisé tout le <strong>Pixel Art</strong>, travaillant sur l'esthétique "rétro" tout en optimisant le Level Design pour offrir une difficulté progressive.</p> <a href="https://baptiste-lacaze.itch.io/knights-maze-ascent" class="btn-filled"><i class="fa-solid fa-gamepad"></i> Jouer au jeu</a>`,
+            gr: `<h3>Génération Responsable : Design pour l'Engagement</h3> <p>Ce projet de communication visuelle porte sur l'éco-responsabilité. Nous avons travaillé sur la hiérarchie de l'information pour rendre des données complexes accessibles et percutantes. En utilisant des compositions aérées et une typographie forte, nous avons créé un support de <strong>communication digitale</strong> efficace.</p> <a href="image/GR_logo_entier.png" target="_blank" class="btn-outlined"><i class="fa-solid fa-expand"></i> Agrandir le logo</a>`,
+        };
+
+        document.querySelectorAll('.detail-trigger').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const project = btn.getAttribute('data-project');
+                const contentArea = document.getElementById('project-details-area');
+                document.getElementById('details-text-content').innerHTML = projectStories[project];
+                contentArea.style.display = 'block';
+                setTimeout(() => {
+                    window.scrollTo({ top: contentArea.offsetTop - 100, behavior: 'smooth' });
+                }, 50);
+            });
+        });
+
+        document.querySelector('.close-details').addEventListener('click', () => {
+            document.getElementById('project-details-area').style.display = 'none';
+        });
+
+        // --- ANIMATIONS GSAP ---
+        gsap.from(".hero-content > *", { y: 40, opacity: 0, duration: 1, stagger: 0.2, ease: "power4.out" });
+        gsap.from(".timeline-item", { scrollTrigger: { trigger: ".timeline", start: "top 80%" }, x: -50, opacity: 0, duration: 1, stagger: 0.3 });
+        gsap.utils.toArray(".work-card").forEach((card) => {
+            gsap.from(card, { scrollTrigger: { trigger: card, start: "top 90%" }, y: 60, opacity: 0, duration: 1 });
+        });
+    </script>
+</body>
+</html>
