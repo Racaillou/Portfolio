@@ -754,6 +754,10 @@ body {
         width: 40px;
     }
 
+    .nav-logo2 {
+        width: 35px!important;
+    }
+
     .hero-title {
         font-size: 2.8rem;
     }
